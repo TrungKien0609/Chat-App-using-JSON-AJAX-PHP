@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #f7f7f7;
+}
+
+.wrapper {
+  background: #fff;
+  width: 450px;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 0 128px rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 128px rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.wrapper .users {
+  padding: 25px 30px;
+}
+
+.wrapper .users header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.wrapper .users header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .users header .content img {
+  height: 50px;
+  width: 50px;
+}
+
+.wrapper .users header .content .details {
+  margin-left: 15px;
+}
+
+.wrapper .users header .content .details span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.wrapper .users header .logout {
+  background: #333;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+
+.wrapper .users .search {
+  margin: 20px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .users .search .text {
+  font-size: 18px;
+}
+
+.wrapper .users .search input {
+  position: absolute;
+  height: 42px;
+  width: calc(100% - 50px);
+  border: 1px solid #ccc;
+  padding: 0 13px;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.wrapper .users .search input.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.wrapper .users .search button {
+  width: 47px;
+  height: 42px;
+  border: none;
+  outline: none;
+  color: #333;
+  background: #fff;
+  border-radius: 0 5px 5px 0;
+  font-size: 17px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.wrapper .users .search button.active {
+  color: #fff;
+  background: #333;
+}
+
+.wrapper .users .search button.active i::before {
+  content: "\f00d";
+}
+
+.wrapper .users .user_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.wrapper .users .user_list a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 15px 0;
+  border-bottom: 1px solid #e6e6e6;
+  border-bottom-color: #f1f1f1;
+}
+
+.wrapper .users .user_list a .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #333;
+}
+
+.wrapper .users .user_list a .content img {
+  height: 50px;
+  width: 50px;
+}
+
+.wrapper .users .user_list a .content .details {
+  margin-left: 15px;
+}
+
+.wrapper .users .user_list a .content .details span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.wrapper .users .user_list a .content .details p {
+  color: #67676a;
+}
+
+.wrapper .users .user_list a .status_dot {
+  position: absolute;
+  right: 5px;
+  font-size: 12px;
+  color: #468669;
+}
+
+.wrapper .users .user_list a .status_dot.offline {
+  color: #ccc;
+}
+
+.wrapper .users .user_list a:last-child {
+  border: none;
+}
+
+.wrapper .users .user_list::-webkit-scrollbar {
+  width: 0px;
+}
+/*# sourceMappingURL=user_style.css.map */

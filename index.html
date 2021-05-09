@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime chat app</title>
+    <link rel="stylesheet" href="./CSS_SCSS/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="form signup">
+            <header>
+                Realtime chat app
+            </header>
+            <form action="#" enctype ="multipart/form-data"> <!-- remember to add enctype when used input[type=file] -->
+                <div class="error_txt">
+                    <!-- this is an error message! -->
+                </div>
+                <div class="name_details">
+                    <div class="field input">
+                        <label for="">First Name</label>
+                        <input type="text" placeholder="First name" name="fname" required>
+                    </div>
+                    <div class="field input">
+                        <label for="">Last Name</label>
+                        <input type="text" placeholder="Last name"  name="lname"  required>
+                    </div>
+                </div>
+                <div class="field input">
+                    <label for="">Email <Address></Address></label>
+                    <input type="text" placeholder="Enter your email"  name="email"  required>
+                    
+                </div>
+                <div class="field input">
+                    <label for="">Password</label>
+                    <input type="password" placeholder="Enter your password" name="password"  required>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="field image">
+                    <label for="">Select Image</label>
+                    <input type="file" name="image"  required>
+                </div>
+                <div class="field button">
+                    <input type="submit" value="Continue to chat">
+                </div>
+            </form>
+            <div class="link">
+                Already sign up ? <a href="login.html">Login now</a>
+            </div>
+        </section>
+    </div>
+    <script src="./JS/Show_hide_toggle.js"></script>
+    <script src="./JS/signup.js"></script>
+</body>
+
+</html>

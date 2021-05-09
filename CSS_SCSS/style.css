@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #f7f7f7;
+}
+
+.wrapper {
+  background: #fff;
+  width: 450px;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 0 128px rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 128px rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper .form {
+  padding: 25px 30px;
+}
+
+.wrapper .form header {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.wrapper .form form {
+  margin: 20px 0;
+}
+
+.wrapper .form form .error_txt {
+  color: #721c24;
+  background: #f8d7da;
+  padding: 8px 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #f5c6cb;
+  display: none;
+}
+
+.wrapper .form form .name_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .form form .name_details .field:first-child {
+  margin-right: 10px;
+}
+
+.wrapper .form form .name_details .field:last-child {
+  margin-left: 10px;
+}
+
+.wrapper .form form .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.wrapper .form form .field input {
+  outline: none;
+}
+
+.wrapper .form form .field label {
+  margin-bottom: 2px;
+}
+
+.wrapper .form form .field i {
+  position: absolute;
+  right: 15px;
+  color: #ccc;
+  top: 70%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.wrapper .form form .field i.active::before {
+  color: #333;
+  content: "\f070";
+}
+
+.wrapper .form form .input input {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.wrapper .form form .image input {
+  font-size: 17px;
+}
+
+.wrapper .form form .button input {
+  margin-top: 13px;
+  height: 45px;
+  border: none;
+  font-size: 17px;
+  font-weight: 400;
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.wrapper .form .link {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.wrapper .form .link a {
+  color: #333;
+}
+
+.wrapper .form .link a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */
